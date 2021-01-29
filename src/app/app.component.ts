@@ -13,11 +13,12 @@ export interface Post {
 })
 export class AppComponent {
     search = ''
+    searchField = 'title'
 
     posts: Post[] = [
-        {title: 'Kiev', text: 'Kiev is the capital of Ukrain', id: 1},
-        {title: 'Moscow', text: 'Moscow is the capital of Russia'},
+        {title: 'Kiev', text: 'I am living in Kiev', id: 1},
+        {title: 'Moscow', text: 'Moscow is the largest city in Russia'},
         {title: 'Minsk', text: 'Minsk is the capital of Belarus'},
-        {title: 'Warsaw', text: 'Warsaw is the capital of Poland'},
+        {title: 'Wroclaw', text: 'Wroclaw - city of Poland'},
     ]
 }

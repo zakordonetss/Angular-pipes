@@ -12,6 +12,8 @@ export interface Post {
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+    search = ''
+
     posts: Post[] = [
         {title: 'Kiev', text: 'Kiev is the capital of Ukrain', id: 1},
         {title: 'Moscow', text: 'Moscow is the capital of Russia'},

@@ -16,9 +16,16 @@ export class AppComponent {
     searchField = 'title'
 
     posts: Post[] = [
-        {title: 'Kiev', text: 'I am living in Kiev', id: 1},
+        {title: 'Kiev', text: 'I am living in Kiev'},
         {title: 'Moscow', text: 'Moscow is the largest city in Russia'},
         {title: 'Minsk', text: 'Minsk is the capital of Belarus'},
         {title: 'Wroclaw', text: 'Wroclaw - city of Poland'},
     ]
+
+    addPost() {
+        this.posts.unshift({
+            title: 'New York',
+            text: 'American city',
+        })
+    }
 }
